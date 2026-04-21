@@ -11,18 +11,6 @@
 &trackball {
     automouse-layer = <4>;
     scroll-layers = <5>;
-
-    // arrows {
-    //     layers = <3>;
-    //     bindings =
-    //         <&kp RIGHT_ARROW>,
-    //         <&kp LEFT_ARROW>,
-    //         <&kp UP_ARROW>,
-    //         <&kp DOWN_ARROW>;
-    //     tick = <10>;
-    //     wait-ms = <5>;
-    //     tap-ms = <5>;
-    // };
 };
 
 / {
@@ -40,7 +28,7 @@
         };
 
         muhennkann {
-            bindings = <&to_0 INT_MUHENKAN>;
+            bindings = <&to 0 INT_MUHENKAN>;
             key-positions = <11 10>;
         };
 
@@ -81,7 +69,6 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 3>, <&macro_wait_time 200>, <&to 5>;
-
             label = "IPAD_0";
         };
     };
@@ -90,7 +77,7 @@
         lt_to_0: lt_to_0 {
             compatible = "zmk,behavior-hold-tap";
             label = "_TAP_to_0";
-            bindings = <&mo>, <&to_0>;
+            bindings = <&mo>, <&to 0>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
