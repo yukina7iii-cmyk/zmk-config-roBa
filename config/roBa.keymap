@@ -8,9 +8,7 @@
     quick-tap-ms = <0>;
 };
 
-&trackball {
-    scroll-layers = <3>;
-};
+&trackball { scroll-layers = <3>; };
 
 / {
     combos {
@@ -41,7 +39,7 @@
         BT_IPAD: BT_IPAD {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 3 &macro_wait_time 200 &to 5>;
+            bindings = <&bt BT_SEL 3>, <&macro_wait_time 200>, <&to 5>;
         };
     };
 
@@ -50,73 +48,82 @@
 
         default_layer {
             bindings = <
-&kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U &kp I &kp O &kp P
-&kp A &lt 1 S &lt 1 D &kp F &kp G   &kp H &kp J &kp K &kp L &kp ENTER
-&kp Z &kp X &kp C &kp V &kp B   &kp N &kp M &kp COMMA &kp DOT &kp BSPC
-&kp LCTRL  &mt LGUI D  &kp CAPSLOCK  &kp LEFT_SHIFT  &kp SPACE
+&kp Q      &kp W    &kp E    &kp R  &kp T                          &kp Y     &kp U      &kp I       &kp O         &kp P
+&kp A      &lt 1 S  &lt 1 D  &kp F  &kp G  &kp H          &kp J    &kp K     &kp L      &kp ENTER   &kp Z         &kp X
+&kp C      &kp V    &kp B    &kp N  &kp M  &kp COMMA      &kp DOT  &kp BSPC  &kp LCTRL  &mt LGUI D  &kp CAPSLOCK  &kp LEFT_SHIFT
+&kp SPACE
             >;
         };
 
         NUM {
             bindings = <
-&kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
-&kp MINUS &kp EQUAL &kp LEFT &kp DOWN &kp UP   &kp RIGHT &kp PLUS &kp ASTERISK &kp SLASH &kp ENTER
-&trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans
-&trans &trans &trans &trans &trans
+&kp N1     &kp N2     &kp N3    &kp N4    &kp N5                           &kp N6        &kp N7     &kp N8     &kp N9  &kp N0
+&kp MINUS  &kp EQUAL  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT      &kp PLUS  &kp ASTERISK  &kp SLASH  &kp ENTER  &trans  &trans
+&trans     &trans     &trans    &trans    &trans  &trans         &trans    &trans        &trans     &trans     &trans  &trans
+&trans
             >;
         };
 
         MOUSE {
             bindings = <
-&trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans
-&trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans
-&trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans
-&trans &trans &trans &trans &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans
             >;
         };
 
         SCROLL {
             bindings = <
-&trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans
-&trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans
-&trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans
-&trans &trans &trans &trans &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans
             >;
         };
 
         BLUETOOTH {
             bindings = <
-&trans &trans &trans &trans &trans   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &BT_IPAD &bt BT_SEL 4
-&trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans
-&trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans
-&trans &trans &trans &trans &trans
+&trans  &trans  &trans  &trans  &trans                      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &BT_IPAD  &bt BT_SEL 4
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans        &trans        &trans        &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans        &trans        &trans        &trans    &trans
+&trans
             >;
         };
 
         IPAD_0 {
             bindings = <
-&kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U &kp I &kp O &kp P
-&kp A &lt 6 S &lt 7 D &kp F &kp G   &kp H &kp J &kp K &kp L &kp ENTER
-&kp Z &kp X &kp C &kp V &kp B   &kp N &kp M &kp COMMA &kp DOT &kp BSPC
-&kp LGUI &kp LALT &kp CAPSLOCK &kp LEFT_SHIFT &kp SPACE
+&kp Q      &kp W    &kp E    &kp R  &kp T                          &kp Y     &kp U     &kp I      &kp O         &kp P
+&kp A      &lt 6 S  &lt 7 D  &kp F  &kp G  &kp H          &kp J    &kp K     &kp L     &kp ENTER  &kp Z         &kp X
+&kp C      &kp V    &kp B    &kp N  &kp M  &kp COMMA      &kp DOT  &kp BSPC  &kp LGUI  &kp LALT   &kp CAPSLOCK  &kp LEFT_SHIFT
+&kp SPACE
             >;
         };
 
         IPAD_1 {
             bindings = <
-&kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
-&trans &trans &kp UP_ARROW &trans &trans   &kp LEFT &kp DOWN &kp RIGHT &trans &trans
-&trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans
-&trans &trans &trans &trans &trans
+&kp N1  &kp N2  &kp N3        &kp N4  &kp N5                          &kp N6     &kp N7  &kp N8  &kp N9  &kp N0
+&trans  &trans  &kp UP_ARROW  &trans  &trans  &kp LEFT      &kp DOWN  &kp RIGHT  &trans  &trans  &trans  &trans
+&trans  &trans  &trans        &trans  &trans  &trans        &trans    &trans     &trans  &trans  &trans  &trans
+&trans
             >;
         };
 
         IPAD_2 {
             bindings = <
-&trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans
-&trans &trans &kp UP_ARROW &trans &trans   &trans &mkp MB1 &mkp MB2 &mkp MB3 &trans
-&trans &trans &kp DOWN_ARROW &trans &trans   &trans &trans &trans &trans &trans
-&trans &kp LEFT &kp RIGHT &trans &trans
+&trans          &trans  &trans        &trans  &trans                        &trans    &trans    &trans    &trans     &trans
+&trans          &trans  &kp UP_ARROW  &trans  &trans  &trans      &mkp MB1  &mkp MB2  &mkp MB3  &trans    &trans     &trans
+&kp DOWN_ARROW  &trans  &trans        &trans  &trans  &trans      &trans    &trans    &trans    &kp LEFT  &kp RIGHT  &trans
+&trans
+            >;
+        };
+
+        layer_8 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &none
             >;
         };
     };
