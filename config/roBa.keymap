@@ -16,9 +16,19 @@
             key-positions = <11 12>;
         };
 
-        esc_combo {
-            bindings = <&kp ESC>;
+        shift_tab_combo {
+            bindings = <&kp LS(TAB)>;
             key-positions = <12 13>;
+        };
+
+        muhennkan_combo {
+            bindings = <&kp LANG2>;
+            key-positions = <11 10>;
+        };
+
+        quote_combo {
+            bindings = <&kp DQT>;
+            key-positions = <20 21>;
         };
     };
 
