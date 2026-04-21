@@ -69,10 +69,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans          &trans     &trans          &kp LG(V)                        &kp F7    &kp F8    &kp F9    &kp F10   &kp F12
-&trans  &trans          &trans     &kp UP_ARROW    &kp LC(C)  &trans      &trans    &trans    &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans          &trans     &kp DOWN_ARROW  &kp LC(V)  &trans      &trans    &trans    &trans    &trans    &trans    &trans
-&trans  &kp LEFT_ARROW  &kp RIGHT  &trans          &trans     &trans      &mkp MB4  &mkp MB5                                &none
+&trans  &trans          &trans     &trans          &kp LG(V)                        &kp F7        &kp F8          &kp F9    &kp F10   &kp F12
+&trans  &trans          &trans     &kp UP_ARROW    &kp LC(C)  &trans      &trans    &trans        &mkp MB1        &mkp MB3  &mkp MB2  &trans
+&trans  &trans          &trans     &kp DOWN_ARROW  &kp LC(V)  &trans      &trans    &msc SCRL_UP  &msc SCRL_DOWN  &trans    &trans    &trans
+&trans  &kp LEFT_ARROW  &kp RIGHT  &trans          &trans     &trans      &mkp MB4  &mkp MB5                                          &none
             >;
         };
 
@@ -114,10 +114,10 @@
 
         IPAD_2 {
             bindings = <
-&trans  &trans          &trans     &trans          &trans                                       &trans                 &trans    &trans    &trans    &trans
-&trans  &trans          &trans     &kp UP_ARROW    &kp LG(C)  &trans      &trans                &trans                 &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans          &trans     &kp DOWN_ARROW  &kp LG(V)  &trans      &trans                &trans                 &trans    &trans    &trans    &trans
-&trans  &kp LEFT_ARROW  &kp RIGHT  &trans          &trans     &trans      &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)                                &none
+&trans  &trans          &trans     &trans          &trans                                       &trans                 &trans          &trans    &trans    &trans
+&trans  &trans          &trans     &kp UP_ARROW    &kp LG(C)  &trans      &trans                &trans                 &mkp MB1        &mkp MB3  &mkp MB2  &trans
+&trans  &trans          &trans     &kp DOWN_ARROW  &kp LG(V)  &trans      &trans                &msc SCRL_UP           &msc SCRL_DOWN  &trans    &trans    &trans
+&trans  &kp LEFT_ARROW  &kp RIGHT  &trans          &trans     &trans      &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)                                      &none
             >;
         };
     };
