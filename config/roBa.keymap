@@ -131,17 +131,17 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans          &trans  &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &msc SCRL_LEFT  &trans  &msc SCRL_RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                           &trans
+&trans  &trans  &trans  &trans  &trans                                    &trans     &trans          &trans  &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans                &trans     &msc SCRL_LEFT  &trans  &msc SCRL_RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans                &trans     &trans          &trans  &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &kp LG(LEFT_BRACKET)  &kp LG(R)                                           &trans
             >;
         };
 
         BLUETOOTH {
             bindings = <
 &trans  &trans  &trans  &trans   &trans                            &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans  &trans  &trans   &trans   &trans      &trans       &trans        &trans        &trans        &trans        &trans
+&trans  &trans  &trans  &trans   &trans   &trans      &trans       &kp HASH      &kp DOLLAR    &kp PERCENT   &kp LCTRL     &kp AMPERSAND
 &trans  &trans  &trans  &trans   &trans   &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans  &trans  &trans  &PASS_2  &PASS_1  &ID         &trans       &trans                                                  &bt BT_CLR_ALL
             >;
@@ -150,7 +150,7 @@
         IPAD_0 {
             bindings = <
 &kp Q         &kp W      &kp E                      &kp R           &kp T                                                         &kp Y      &kp U  &kp I      &kp O    &kp P
-&kp A         &lt 6 S    &lt 7 D                    &lt 4 F         &kp G        &none                     &kp LEFT_PARENTHESIS   &kp H      &kp J  &lt 3 K    &kp L    &kp DELETE
+&kp A         &lt 6 S    &lt 7 D                    &lt 4 F         &kp G        &none                     &kp LEFT_PARENTHESIS   &kp H      &kp J  &lt 3 K    &kp L    &kp LC(D)
 &kp Z         &kp X      &kp C                      &kp V           &kp B        &kp ESCAPE                &kp RIGHT_PARENTHESIS  &kp N      &kp M  &kp COMMA  &kp DOT  &kp BACKSPACE
 &kp LEFT_WIN  &kp LG(H)  &mt LS(CAPSLOCK) CAPSLOCK  &kp LEFT_SHIFT  &lt 6 SPACE  &kp LG(LS(NUMBER_3))      &mt AT_SIGN MINUS      &kp ENTER                             &mt EXCLAMATION QUESTION
             >;
@@ -169,10 +169,10 @@
 
         IPAD_2 {
             bindings = <
-&trans  &trans          &trans     &trans          &trans                           &trans    &trans    &trans    &trans    &trans
-&trans  &trans          &trans     &kp UP_ARROW    &kp LG(C)  &trans      &trans    &trans    &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans          &trans     &kp DOWN_ARROW  &kp LG(V)  &trans      &trans    &trans    &trans    &trans    &trans    &trans
-&trans  &kp LEFT_ARROW  &kp RIGHT  &trans          &trans     &trans      &mkp MB4  &mkp MB5                                &trans
+&trans  &trans          &trans     &trans          &trans                                       &trans                 &trans    &trans    &trans    &trans
+&trans  &trans          &trans     &kp UP_ARROW    &kp LG(C)  &trans      &trans                &trans                 &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans  &trans          &trans     &kp DOWN_ARROW  &kp LG(V)  &trans      &trans                &trans                 &trans    &trans    &trans    &trans
+&trans  &kp LEFT_ARROW  &kp RIGHT  &trans          &kp LG(R)  &trans      &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)                                &trans
             >;
         };
     };
