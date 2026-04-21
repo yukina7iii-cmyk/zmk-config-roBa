@@ -74,10 +74,18 @@
     };
 
     behaviors {
+
+        to_0: to_0 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "TO_0";
+            #binding-cells = <0>;
+            bindings = <&to 0>;
+        };
+
         lt_to_0: lt_to_0 {
             compatible = "zmk,behavior-hold-tap";
             label = "_TAP_to_0";
-            bindings = <&mo &to 0>;
+            bindings = <&mo &to_0>;
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
