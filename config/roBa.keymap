@@ -8,6 +8,20 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        tab_combo {
+            bindings = <&kp TAB>;
+            key-positions = <11 12>;
+        };
+
+        esc_combo {
+            bindings = <&kp ESC>;
+            key-positions = <12 13>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
