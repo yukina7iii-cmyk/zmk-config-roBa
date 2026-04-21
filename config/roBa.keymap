@@ -22,6 +22,22 @@
         };
     };
 
+    macros {
+        ID: ID {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Z &kp N2 &kp N6 &kp N1>;
+            label = "ID";
+        };
+
+        NUM_MACRO: NUM_MACRO {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N1 &kp N2 &kp N3>;
+            label = "NUM";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
