@@ -92,10 +92,10 @@
 
         IPAD_0 {
             bindings = <
-&kp Q      &kp W    &kp E    &kp R    &kp T                                         &kp Y     &kp U     &kp I      &kp O         &kp P
-&kp A      &lt 6 S  &lt 7 D  &lt 4 F  &kp G   &none          &kp LEFT_PARENTHESIS   &kp K     &kp L     &kp ENTER  &kp Z         &kp X
-&kp C      &kp V    &kp B    &kp N    &kp M   &kp COMMA      &kp RIGHT_PARENTHESIS  &kp BSPC  &kp LGUI  &kp LALT   &kp CAPSLOCK  &kp LEFT_SHIFT
-&kp SPACE  &trans   &trans   &trans   &trans  &trans         &trans                 &trans                                       &none
+&kp Q         &kp W      &kp E              &kp R           &kp T                                               &kp Y      &kp U  &kp I      &kp O    &kp P
+&kp A         &lt 6 S    &lt 7 D            &lt 4 F         &kp G        &none           &kp LEFT_PARENTHESIS   &kp H      &kp J  &kp K      &kp L    &kp LC(D)
+&kp Z         &kp X      &kp C              &kp V           &kp B        &kp ESCAPE      &kp RIGHT_PARENTHESIS  &kp N      &kp M  &kp COMMA  &kp DOT  &kp BSPC
+&kp LEFT_WIN  &kp LG(H)  &mt LS(CAPS) CAPS  &kp LEFT_SHIFT  &lt 6 SPACE  &kp LG(N3)      &mt AT_SIGN MINUS      &kp ENTER                             &mt SEMI COLON
             >;
         };
 
