@@ -110,19 +110,10 @@
 
         IPAD_2 {
             bindings = <
-&trans          &trans  &trans        &trans  &trans                        &trans    &trans    &trans    &trans     &trans
-&trans          &trans  &kp UP_ARROW  &trans  &trans  &trans      &mkp MB1  &mkp MB2  &mkp MB3  &trans    &trans     &trans
-&kp DOWN_ARROW  &trans  &trans        &trans  &trans  &trans      &trans    &trans    &trans    &kp LEFT  &kp RIGHT  &trans
-&trans          &trans  &trans        &trans  &trans  &trans      &trans    &trans                                   &none
-            >;
-        };
-
-        layer_8 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &none
+&trans  &trans          &trans     &trans          &trans                                       &trans                 &trans    &trans    &trans     &trans
+&trans  &trans          &trans     &kp UP_ARROW    &kp LG(C)  &trans      &trans                &trans                 &mkp MB1  &mkp MB3  &mkp MB2   &trans
+&trans  &trans          &trans     &kp DOWN_ARROW  &kp LG(V)  &trans      &trans                &trans                 &trans    &kp LEFT  &kp RIGHT  &trans
+&trans  &kp LEFT_ARROW  &kp RIGHT  &trans          &trans     &trans      &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)                                 &none
             >;
         };
     };
