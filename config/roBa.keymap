@@ -38,28 +38,10 @@
     };
 
     macros {
-        ID: ID {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Z &kp N2 &kp N6 &kp N1>;
-        };
-
-        PASS_1: PASS_1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp T &kp Y &kp N8 &kp N9>;
-        };
-
-        PASS_2: PASS_2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp R &kp D &kp N8 &kp N9>;
-        };
-
         BT_IPAD: BT_IPAD {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 3 &macro_wait_time 200 &to 1>;
+            bindings = <&bt BT_SEL 3 &macro_wait_time 200 &to 5>;
         };
     };
 
@@ -104,10 +86,37 @@
 
         BLUETOOTH {
             bindings = <
-&trans &trans &trans &trans &trans   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
+&trans &trans &trans &trans &trans   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &BT_IPAD &bt BT_SEL 4
 &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans
 &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans
-&trans &trans &PASS_2 &PASS_1 &ID
+&trans &trans &trans &trans &trans
+            >;
+        };
+
+        IPAD_0 {
+            bindings = <
+&kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U &kp I &kp O &kp P
+&kp A &lt 6 S &lt 7 D &kp F &kp G   &kp H &kp J &kp K &kp L &kp ENTER
+&kp Z &kp X &kp C &kp V &kp B   &kp N &kp M &kp COMMA &kp DOT &kp BSPC
+&kp LGUI &kp HYPER &kp CAPSLOCK &kp LEFT_SHIFT &kp SPACE
+            >;
+        };
+
+        IPAD_1 {
+            bindings = <
+&kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
+&trans &trans &kp UP_ARROW &trans &trans   &kp LEFT &kp DOWN &kp RIGHT &trans &trans
+&trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans
+            >;
+        };
+
+        IPAD_2 {
+            bindings = <
+&trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans
+&trans &trans &kp UP_ARROW &trans &trans   &trans &mkp MB1 &mkp MB2 &mkp MB3 &trans
+&trans &trans &kp DOWN_ARROW &trans &trans   &trans &trans &trans &trans &trans
+&trans &kp LEFT &kp RIGHT &trans &trans
             >;
         };
     };
