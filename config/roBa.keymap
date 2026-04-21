@@ -83,10 +83,10 @@
 
         BLUETOOTH {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &BT_IPAD   &bt BT_SEL 4
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp HASH      &kp DOLLAR    &kp PERCENT   &kp LCTRL  &kp AMPS
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans        &trans        &trans        &trans     &bt BT_CLR
-&trans  &trans  &trans  &PS_2   &PS_1   &ID         &trans  &trans                                               &bt BT_CLR_ALL
+&trans  &trans  &trans  &trans  &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &BT_IPAD   &bt BT_SEL 4
+&trans  &trans  &trans  &trans  &trans  &trans           &trans  &kp HASH      &kp DOLLAR    &kp PERCENT   &kp LCTRL  &kp AMPS
+&trans  &trans  &trans  &trans  &trans  &bootloader      &trans  &trans        &trans        &trans        &trans     &bt BT_CLR
+&trans  &trans  &trans  &PS_2   &PS_1   &ID              &trans  &trans                                               &bt BT_CLR_ALL
             >;
         };
 
