@@ -69,6 +69,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 3>, <&macro_wait_time 200>, <&to 5>;
+
             label = "IPAD_0";
         };
     };
@@ -158,7 +159,7 @@
 &trans  &trans          &trans     &trans          &trans                                       &trans                 &trans    &trans    &trans    &trans
 &trans  &trans          &trans     &kp UP_ARROW    &kp LG(C)  &trans      &trans                &trans                 &mkp MB1  &mkp MB3  &mkp MB2  &trans
 &trans  &trans          &trans     &kp DOWN_ARROW  &kp LG(V)  &trans      &trans                &trans                 &trans    &trans    &trans    &trans
-&trans  &kp LEFT_ARROW  &kp RIGHT  &trans          &kp LG(R)  &trans      &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)                                &trans
+&trans  &kp LEFT_ARROW  &kp RIGHT  &trans          &kp LG(R)  &none       &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)                                &trans
             >;
         };
     };
