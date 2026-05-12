@@ -52,6 +52,8 @@
 &kp Z      &kp X               &kp C                      &kp V           &kp B        &kp ESC                           &kp RIGHT_PARENTHESIS  &kp N      &kp M  &kp COMMA  &kp DOT  &kp BSPC
 &kp LCTRL  &mt LEFT_WIN LG(D)  &mt LS(CAPSLOCK) CAPSLOCK  &kp LEFT_SHIFT  &lt 1 SPACE  &mt LA(LC(DELETE)) LG(LS(S))      &mt AT_SIGN MINUS      &kp ENTER                             &mt EXCLAMATION QUESTION
             >;
+
+            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
         NUM {
