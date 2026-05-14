@@ -53,7 +53,7 @@
 &kp LCTRL  &mt LEFT_WIN LG(D)  &mt LS(CAPSLOCK) CAPSLOCK  &kp LEFT_SHIFT  &lt 1 SPACE  &mt LA(LC(DELETE)) LG(LS(S))      &mt AT_SIGN MINUS      &kp ENTER                             &mt EXCLAMATION QUESTION
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_DOWN PG_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP K_VOLUME_DOWN>;
         };
 
         NUM {
